@@ -1,4 +1,4 @@
-import http from 'http';
+import http2 from 'http2';
 import fs from 'fs';
 // import { Stream } from 'stream';
 
@@ -17,7 +17,7 @@ const handleRequest = (req, res) => {
     }
 };
 
-const server = http.createServer(
+const server = http2.createServer(
  handleRequest
 );
 
